@@ -36,13 +36,14 @@ public class snowmangame {
     JPanel snowProblemPanel = new JPanel(); // Create a panel
     snowProblemFrame.setContentPane(snowProblemPanel); // Use panel on Window
 
-
+/*Add JPanel "snowProblemDescription" on the top and center of the frame snowProblemFrame GUI to give the player 
+a short description of the game.*/
     JLabel snowProblemDescription = new JLabel();
-    snowProblemDescription.setOpaque(true);
-    snowProblemDescription.setBorder(BorderFactory.createEmptyBorder(50,500,10,10));
-    snowProblemDescription.setBackground(Color.GREEN);
-    snowProblemFrame.add(snowProblemDescription,BorderLayout.NORTH);
-    JLabel snowProblemDescriptionLable = new JLabel("Can you help the snowman? Build snowmen by guiding snowballs around obstacles until they are perfectly positioned to stack. Plan carefully. Once the snowballs start moving, they will not stop until they hit a barrier.");
-    snowProblemDescription.add(snowProblemDescriptionLable);
+    snowProblemDescription.setOpaque(true); //Back the the panel opaque.
+    snowProblemDescription.setBorder(BorderFactory.createEmptyBorder(1,1,1,1));// Set the borders to 1.
+    snowProblemDescription.setBackground(Color.GREEN); // Set the background color of the label to green
+    snowProblemFrame.add(snowProblemDescription,BorderLayout.NORTH);// Position of the label is set to the top and center of the frame.
+    /*Print the game goal on the label. */
+    snowProblemDescription.setText("Can you help the snowman? Build the snowman by guiding snowballs around obstacles until they are perfectly positioned to stack");
     }
 }
